@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="16dp"
+    android:clipToPadding="false"
+    app:barrierMargin="5dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="51dp">
+
+        <Switch
+            android:id="@+id/flight_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:showText="true"
+            android:splitTrack="false"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textOff="ALLER-RETOUR"
+            android:textOn="ALLER SIMPLE"
+            android:thumb="@drawable/thumb_shape"
+            android:thumbTextPadding="15dp"
+            android:thumbTint="#EDEDED"
+            android:track="@drawable/track_shape"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:text="ALLER-RETOUR"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="false"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:paddingEnd="16.9dp"
+            android:text="ALLER SIMPLE" />
+    </FrameLayout>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="voyageur">
+        <item>1 adulte</item>
+        <item>2 adulte</item>
+        <item>1 adulte,1 enfant</item>
+        <item>2 adultes,1 enfant</item>
+    </string-array>
+
+    <string-array name="classe">
+        <item>Classe économie</item>
+        <item>Classe affaires</item>
+        <item>Première classe</item>
+    </string-array>
+</resources>

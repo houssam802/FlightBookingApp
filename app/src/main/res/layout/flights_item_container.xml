@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <!-- Prix de billet -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#353535"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <!-- Séparateur -->
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFEFEF"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"/>
+        <!-- Partie contenant le logo de la compagnie aérienne et la durée de voyage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/tay"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Code de l'aéroport et heure de départ -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end">
+                    <TextView
+                        android:id="@+id/heure_dep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#555"/>
+
+                    <TextView
+                        android:id="@+id/icao_dep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#757575"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                <!-- Durée de vol -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="25dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/view_circle1"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:background="@drawable/circle_shape" />
+                        <View
+                            android:id="@+id/view_line1"
+                            android:layout_width="50dp"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:background="@drawable/circle_shape" />
+                        <View
+                            android:id="@+id/view_circle2"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:background="@drawable/circle_shape" />
+                        <View
+                            android:id="@+id/view_line2"
+                            android:layout_width="50dp"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:background="@drawable/circle_shape" />
+                        <View
+                            android:id="@+id/view_circle3"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:background="@drawable/circle_shape" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XXh XXm"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                <!-- Code de l'aéroport et heure d'arrivée -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:baselineAligned="true"
+                    android:gravity="start">
+                    <TextView
+                        android:id="@+id/heure_arr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#555"/>
+
+                    <TextView
+                        android:id="@+id/icao_arr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#757575"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

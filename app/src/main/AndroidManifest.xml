@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flight_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_el"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_el_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.First_app">
+        <activity
+            android:name="com.example.flight_app.ActivityFlightInfo"
+            android:exported="false"
+            android:parentActivityName="com.example.flight_app.Flights_ads"/>
+        <activity
+            android:name="com.example.flight_app.Flights_ads"
+            android:exported="false"
+            android:parentActivityName="com.example.flight_app.Main_search_view"/>
+        <activity
+            android:name="com.example.flight_app.Set_city_ctrl"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.example.flight_app.End_date_calendar"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.example.flight_app.Start_date_calendar"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.example.flight_app.Main_search_view"
+            android:theme= "@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="com.example.flight_app.SigninCtrl"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.example.flight_app.LoginCtrl"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

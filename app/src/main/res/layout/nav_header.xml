@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LoginTextInputLayoutStyle"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#444676"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingBottom="25dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:context=".Main_search_view">
+
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/ic_flight_b" />
+
+    <TextView
+        android:id="@+id/full_name"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ellll.dddl@ddd.ccc"
+        android:textSize="15dp" />
+
+
+</LinearLayout>
+

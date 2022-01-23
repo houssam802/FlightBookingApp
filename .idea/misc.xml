@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/drawable/bg_time.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/drawable/button_background.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/drawable/ic_baseline_airline_seat_recline_extra_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/drawable/ic_baseline_airplanemode_inactive_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/drawable/login_sign_button.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/layout/activity_flight_info.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/layout/activity_flights_ads.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/layout/activity_login_view.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/layout/flight_info.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/layout/flights_item_container.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/layout/signin_page.xml" value="0.1935185185185185" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/menu/drawer_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/mipmap-anydpi-v26/ic_el.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/first_app/app/src/main/res/mipmap-anydpi-v26/ic_el_round.xml" value="0.21614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".Flights_ads">
+
+    <!-- C'est la zone située en haut -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- Les dates sélectionnées par l'utilisateur précédemment au page d'accueil -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/right_bottom_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_baseline_calendar_today_24" />
+
+            <TextView
+                android:id="@+id/cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 déc."
+                android:textColor="#858585"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- Nombre de places choisies -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/right_bottom_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <View
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_baseline_supervisor_account_24" />
+
+            <TextView
+                android:id="@+id/nbrplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#858585"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- Classe de siège dans l'avion choisi -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bottom_border"
+            android:padding="15dp">
+
+            <View
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_baseline_airline_seat_recline_extra_24" />
+
+            <TextView
+                android:id="@+id/classe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classe économie"
+                android:textColor="#858585"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Cette zone contient deux éléments : -->
+    <!-- 1- S'affiche s'il n'y a aucun vol trouvé. -->
+    <!-- 2- C'est notre conteneur de liste. -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <!-- 1 -->
+        <LinearLayout
+            android:id="@+id/nothingfound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="75dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_baseline_airplanemode_inactive_24" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No flights found!"
+                android:textColor="@color/teal_700"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:layout_marginTop="100dp"
+                android:onClick="goBack"
+                android:text="Go Back" />
+
+        </LinearLayout>
+        <!-- 2 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/flightsRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_animation_slide_from_bottom"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
